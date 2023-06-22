@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { db } from "@/config/firebase";
 import { doc, getDoc } from "firebase/firestore";
+import {updateDoc} from "firebase/firestore";
 
 const UbahBuku = () => {
   const [nama_buku, setNama_buku] = useState(""); 
