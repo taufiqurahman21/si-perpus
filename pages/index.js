@@ -99,7 +99,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {buku.length > 1 ? (
+                {buku.length >= 1 ? (
                   buku
                 .filter((data) =>
                 data.nama_buku?.toLowerCase().includes(search)
@@ -130,7 +130,7 @@ export default function Home() {
                     </td>
                   </tr>
                 ))
-                ) : (
+                ); (
                   <tr>
                     <td className="py-5 text-center" colSpan={6}>belum ada data buku!</td>
                   </tr>
