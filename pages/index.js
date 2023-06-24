@@ -69,6 +69,7 @@ export default function Home() {
           <div className="mt-10 mb-10">
             <h3 className="text-2xl font-semibold">Data Buku Perpustakaan</h3>
           </div>
+                  <div className="flex items-center justify-between">
           <button
             onClick={addBookHandler}
             className="bg-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-700"
@@ -84,6 +85,7 @@ export default function Home() {
             placeholder="ketik keyword"
             />
           </div>
+              </div>
           {/* tabel */}
           <div className="mt-5">
             <table className="table-auto bg-sky-50 py-10 rounded-xl ">
