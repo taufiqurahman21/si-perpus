@@ -49,21 +49,7 @@ export default function Home() {
     }
   };
 
-  //API
-  // const getBukuList = async () => {
-  //   try {
-  //     const response = await fetch(`https://ekadyar.com/rest/book/list`, {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-  //     const data = await response.json();
-  //     setBuku(data);
-  //     console.log();
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
+  
 
   useEffect(() => {
     getBukuList();
@@ -90,7 +76,7 @@ export default function Home() {
             Tambah Buku
           </button>
           {/* search */}
-          <div className="flex items-center justify end">
+          <div className="flex items-center justify-end">
             <input
             type="text"
             className="w-42 mt-2 block rounded-xl border pc-3 py-2"
@@ -111,7 +97,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {buku.length > 0 ? (
+                {buku.length >= 1 ? (
                   buku
                 .filter((data) =>
                 data.nama_buku?.toLowerCase().includes(search)
