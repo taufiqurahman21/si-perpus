@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex items-center justify-end">
             <input
             type="text"
-            className="w-42 mt-2 block rounded-xl border pc-3 py-2"
+            className="w-42 mt-2 block rounded-xl border px-3 py-2"
             onChange={(e) => setSearch(e.target.value)}
             placeholder="ketik keyword"
             />
@@ -99,7 +99,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {buku.length >= 1 ? (
+                {buku.length > 1 ? (
                   buku
                 .filter((data) =>
                 data.nama_buku?.toLowerCase().includes(search)
