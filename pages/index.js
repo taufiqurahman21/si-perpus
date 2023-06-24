@@ -99,7 +99,7 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {buku.length >= 1 ? (
+                {buku.length > 0 ? (
                   buku
                 .filter((data) =>
                 data.nama_buku?.toLowerCase().includes(search)
