@@ -130,7 +130,7 @@ export default function Home() {
                     </td>
                   </tr>
                 ))
-                ); (
+                ) : (
                   <tr>
                     <td className="py-5 text-center" colSpan={6}>belum ada data buku!</td>
                   </tr>
